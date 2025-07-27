@@ -4,6 +4,13 @@ import { ExternalLink } from "lucide-react";
 
 const projects = [
     {
+    title: "Mira Jersey",
+    description: "Jersey e-commerce platform featuring modern and classic football jerseys with online payments, order tracking, and a fully responsive design.",
+    tech: ["React", "Tailwind CSS", "Chapa API", "Node.js", "Express", "PostgreSQL", "Cloudinary"],
+    link: "https://mirajersey.netlify.app",
+    image: "/images/mira.webp"
+    },
+    {
         title: "Akotet Shoes",
         description: "Premium leather e-commerce platform with online payments, order tracking, and responsive design.",
         tech: ["React", "Tailwind CSS", "Chapa API", "Node.js", "Express", "PostgreSql", "Cloudinary"],
