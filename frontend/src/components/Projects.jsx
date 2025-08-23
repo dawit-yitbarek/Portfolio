@@ -4,11 +4,11 @@ import { ExternalLink } from "lucide-react";
 
 const projects = [
     {
-    title: "Mira Jersey",
-    description: "Jersey e-commerce platform featuring modern and classic football jerseys with online payments, order tracking, and a fully responsive design.",
-    tech: ["React", "Tailwind CSS", "Chapa API", "Node.js", "Express", "PostgreSQL", "Cloudinary"],
-    link: "https://mirajersey.netlify.app",
-    image: "/images/mira.webp"
+        title: "Mira Jersey",
+        description: "Jersey e-commerce platform featuring modern and classic football jerseys with online payments, order tracking, and a fully responsive design.",
+        tech: ["React", "Tailwind CSS", "Chapa API", "Node.js", "Express", "PostgreSQL", "Cloudinary"],
+        link: "https://mirajersey.netlify.app",
+        image: "/images/mira.webp"
     },
     {
         title: "Akotet Shoes",
@@ -32,17 +32,22 @@ const projects = [
         image: "/images/becoz.png"
     },
     {
+        title: "ግጥም Lounge",
+        description: "Poem reading and publishing platform where anyone can explore poems or sign up to share their own, with a clean profile system, modern UI, and smooth reading experience.",
+        tech: ["React", "Tailwind CSS", "Node.js", "Express", "PostgreSQL"],
+        link: "https://gitimlounge.vercel.app",
+        image: "/images/gitimlounge.webp"
+    },
+    {
         title: "Rising Star Academy",
-        description:
-            "Educational website for a private academy with Kindergarten to Grade 8 branches. Includes about sections, accreditation highlights, campus facilities, and SEO-optimized layout.",
+        description: "Educational website for a private academy with Kindergarten to Grade 8 branches. Includes about sections, accreditation highlights, campus facilities, and SEO-optimized layout.",
         tech: ["React", "Tailwind CSS", "Responsive Design"],
         image: "/images/rising.png",
         link: "https://rsa-ethiopia.vercel.app" 
     },
     {
         title: "Sis Curtain",
-        description:
-            "Elegant website for a curtain and carpet seller. Built with a sleek dark design and product highlight sections to showcase home decor solutions with delivery service.",
+        description: "Elegant website for a curtain and carpet seller. Built with a sleek dark design and product highlight sections to showcase home decor solutions with delivery service.",
         tech: ["React", "Tailwind CSS", "Responsive Design"],
         image: "/images/sis.png",
         link: "https://sis-curtains.vercel.app" 
