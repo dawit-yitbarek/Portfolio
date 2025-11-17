@@ -3,9 +3,10 @@ import axios from "axios";
 
 export async function POST(req: Request) {
     try {
+        const { name, email, phone, message } = await req.json();
+
         const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN!;
         const CHAT_ID = process.env.TELEGRAM_CHAT_ID!;
-        console.log("Message details:", { name, email, phone, message });
 
         const text =
             `📩 *New Portfolio Message*\n\n` +
