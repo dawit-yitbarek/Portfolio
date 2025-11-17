@@ -43,14 +43,14 @@ const projects = [
         description: "Educational website for a private academy with Kindergarten to Grade 8 branches. Includes about sections, accreditation highlights, campus facilities, and SEO-optimized layout.",
         tech: ["React", "Tailwind CSS", "Responsive Design"],
         image: "/images/rising.png",
-        link: "https://rsa-ethiopia.vercel.app" 
+        link: "https://rsa-ethiopia.vercel.app"
     },
     {
         title: "Sis Curtain",
         description: "Elegant website for a curtain and carpet seller. Built with a sleek dark design and product highlight sections to showcase home decor solutions with delivery service.",
         tech: ["React", "Tailwind CSS", "Responsive Design"],
         image: "/images/sis.png",
-        link: "https://sis-curtains.vercel.app" 
+        link: "https://sis-curtains.vercel.app"
     }
 ];
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { SiHtml5, SiCss3, SiJavascript, SiBootstrap, SiReact, SiTailwindcss, SiNodedotjs, SiExpress, SiPostgresql, SiJsonwebtokens, SiRender, SiVite, SiCloudinary, SiGit } from "react-icons/si";
+import { SiHtml5, SiCss3, SiJavascript, SiBootstrap, SiReact, SiTailwindcss, SiNodedotjs, SiExpress, SiPostgresql, SiJsonwebtokens, SiVite, SiCloudinary, SiGit, SiEjs } from "react-icons/si";
 import { VscCode } from "react-icons/vsc";
 
 const skillGroups = [
@@ -12,6 +12,7 @@ const skillGroups = [
             { name: "JavaScript", icon: <SiJavascript className="text-yellow-400 w-7 h-7" /> },
             { name: "React", icon: <SiReact className="text-cyan-400 w-7 h-7" /> },
             { name: "Tailwind CSS", icon: <SiTailwindcss className="text-sky-400 w-7 h-7" /> },
+            { name: "EJS", icon: <SiEjs className="text-sky-400 w-7 h-7" /> },
         ],
     },
     {
