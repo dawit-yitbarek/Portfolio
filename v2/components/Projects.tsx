@@ -18,12 +18,19 @@ export default function Projects() {
             tech: ["React", "Tailwind CSS", "Node.js", "Express", "PostgreSQL", "Solana", "Google OAuth"],
             link: "https://nova-realm.vercel.app/"
         },
-        {
+        /*{
             title: "Geld Earn Bot & Mini App",
             description: "A complete Telegram referral system with a custom mini-app. Includes referral tracking, user ranking, admin dashboard, task system, joining verification, and fraud-resistant referral approval. The mini-app features real-time leaderboard, profile management, and admin tools for user and referral inspection.",
             image: "/images/geldearn.jpg",
             tech: ["React", "Tailwind CSS", "Node.js", "Express", "PostgreSQL", "Telegram Bot API", "Telegram Mini App"],
             link: "https://t.me/Geldearn_Bot?start=6867085646"
+        },*/
+        {
+            title: "Nexus AI Blog",
+            description: "A sophisticated tech-focused blogging platform featuring AI-powered semantic search. It leverages vector embeddings to understand user intent beyond keywords, offering a high-signal reading experience. Includes a secure author dashboard, and real-time technical content management.",
+            image: "/images/nexusblog.png",
+            tech: ["Next.js", "Supabase Vector", "OpenAI API", "Tailwind CSS", "TypeScript", "PostgreSQL"],
+            link: "https://nexus-blog-eth.vercel.app/"
         },
         {
             title: "Becoz Real Estate",
