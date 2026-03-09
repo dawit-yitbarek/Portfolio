@@ -78,13 +78,13 @@ export default function Header() {
                     <Link href="/" className="hover:text-white transition-colors" onClick={() => setMenuOpen(false)}>
                         Home
                     </Link>
-                    <Link href="/projects" className="hover:text-white transition-colors" onClick={() => setMenuOpen(false)}>
+                    <Link href="#projects" className="hover:text-white transition-colors" onClick={() => setMenuOpen(false)}>
                         Projects
                     </Link>
-                    <Link href="/about" className="hover:text-white transition-colors" onClick={() => setMenuOpen(false)}>
+                    <Link href="#about" className="hover:text-white transition-colors" onClick={() => setMenuOpen(false)}>
                         About
                     </Link>
-                    <Link href="/contact" className="hover:text-white transition-colors" onClick={() => setMenuOpen(false)}>
+                    <Link href="#contact" className="hover:text-white transition-colors" onClick={() => setMenuOpen(false)}>
                         Contact
                     </Link>
                 </nav>
