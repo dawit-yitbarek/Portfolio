@@ -75,16 +75,13 @@ export default function Header() {
             {/* Mobile Menu */}
             {menuOpen && (
                 <nav className="md:hidden bg-black/90 text-gray-300 flex flex-col items-center space-y-4 py-4">
-                    <Link href="/" className="hover:text-white transition-colors" onClick={() => setMenuOpen(false)}>
-                        Home
-                    </Link>
-                    <Link href="/projects" className="hover:text-white transition-colors" onClick={() => setMenuOpen(false)}>
+                    <Link href="#projects" className="hover:text-white transition-colors" onClick={() => setMenuOpen(false)}>
                         Projects
                     </Link>
-                    <Link href="/about" className="hover:text-white transition-colors" onClick={() => setMenuOpen(false)}>
+                    <Link href="#about" className="hover:text-white transition-colors" onClick={() => setMenuOpen(false)}>
                         About
                     </Link>
-                    <Link href="/contact" className="hover:text-white transition-colors" onClick={() => setMenuOpen(false)}>
+                    <Link href="#contact" className="hover:text-white transition-colors" onClick={() => setMenuOpen(false)}>
                         Contact
                     </Link>
                 </nav>
