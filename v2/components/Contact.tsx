@@ -11,6 +11,7 @@ export default function Contact() {
     const sendMessage = async (e: any) => {
         e.preventDefault();
 
+        if (loading) return;
         setLoading(true);
         setSuccess(false);
         setError(false);
@@ -74,8 +75,8 @@ export default function Contact() {
                     </h3>
 
                     <p className="text-gray-300 leading-relaxed">
-                        Whether you need a modern website, a full-stack web application, Telegram mini-app,
-                        a Telegram bot, or a powerful backend system—I'm ready to help
+                        Whether you need a modern website, full-stack web application, Mobile app, Telegram mini-app,
+                        Telegram bot, or a powerful backend system—I'm ready to help
                         bring your ideas to life.
                     </p>
 
@@ -86,9 +87,10 @@ export default function Contact() {
                     </p>
 
                     <div className="space-y-2 text-gray-400">
-                        <p><span className="font-semibold text-white">Email:</span> <a href="mailto:dawityitbarek18@gmail.com" className="hover:underline">dawityitbarek18@gmail.com</a></p>
-                        <p><span className="font-semibold text-white">Phone:</span> <a href="tel:+251967305200" className="hover:underline">+251 967 305 200</a></p>
-                        <p><span className="font-semibold text-white">Location:</span> Ethiopia</p>
+                        <p><span className="font-semibold text-white">Email:</span> <a target="_blank" href="mailto:dawityitbarek18@gmail.com" className="hover:underline">dawityitbarek18@gmail.com</a></p>
+                        <p><span className="font-semibold text-white">Phone:</span> <a target="_blank" href="tel:+251967305200" className="hover:underline">+251 967 305 200</a></p>
+                        <p><span className="font-semibold text-white">Telegram:</span> <a target="_blank" href="https://t.me/Davidyz17" className="hover:underline">@Davidyz17</a></p>
+                        <p><span className="font-semibold text-white">Location:</span> Addis Ababa, Ethiopia</p>
                     </div>
                 </div>
 
@@ -147,6 +149,7 @@ export default function Contact() {
                     )}
 
                     <button
+                        disabled={loading}
                         type="submit"
                         className="w-full py-2 bg-white text-black rounded-md font-semibold hover:bg-gray-200 transition"
                     >

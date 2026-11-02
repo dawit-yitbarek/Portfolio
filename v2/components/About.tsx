@@ -1,3 +1,5 @@
+import { SKILLS, type Skill } from "@/config/constants";
+
 export default function About() {
     return (
         <section
@@ -13,9 +15,9 @@ export default function About() {
                 {/* Left Column — Text */}
                 <div className="md:w-1/2 space-y-5">
                     <p className="text-gray-300 leading-relaxed">
-                        I’m a passionate Full Stack Web Developer who loves
+                        I’m a passionate Full Stack Developer who loves
                         building modern, clean, and high-performance web
-                        applications, Telegram mini-apps, and Telegram bots. I specialize in frontend and backend
+                        applications, Mobile apps, Telegram mini-apps, and Telegram bots. I specialize in frontend and backend
                         development using cutting-edge tools and best practices.
                     </p>
 
@@ -26,7 +28,7 @@ export default function About() {
                     </p>
 
                     <p className="text-gray-300 leading-relaxed">
-                        My goal is to craft websites that are both visually
+                        My goal is to craft websites and apps that are both visually
                         impressive and technically strong, giving businesses
                         and users an excellent experience.
                     </p>
@@ -36,16 +38,10 @@ export default function About() {
                 <div className="md:w-1/2">
                     <h3 className="text-xl font-semibold mb-5">Skills & Tools</h3>
 
-                    <div className="grid grid-cols-3 sm:grid-cols-4 gap-6">
-                        {/* Icons */}
-                        <SkillIcon src="/icons/react.svg" label="React" color="#61DAFB" />
-                        <SkillIcon src="/icons/nextjs.svg" label="Next.js" color="#ffffff" />
-                        <SkillIcon src="/icons/tailwind.svg" label="Tailwind" color="#06B6D4" />
-                        <SkillIcon src="/icons/node.svg" label="Node.js" color="#5FA04E" />
-                        <SkillIcon src="/icons/express.svg" label="Express" color="#ffffff" />
-                        <SkillIcon src="/icons/postgres.svg" label="PostgreSQL" color="#4169E1" />
-                        <SkillIcon src="/icons/chapa.jpg" label="Chapa API" chapa={true} />
-                        <SkillIcon src="/icons/typescript.svg" label="TypeScript" color="#3178C6" />
+                    <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6">
+                        {SKILLS.map((skill) => (
+                            <SkillIcon key={skill.label} {...skill} />
+                        ))}
                     </div>
                 </div>
             </div>
@@ -54,16 +50,23 @@ export default function About() {
 }
 
 /* Small reusable skill icon */
-function SkillIcon({ src, label, color, chapa }: { src: string; label: string; color?: string; chapa?: boolean; }) {
+function SkillIcon({ label, src, color, size }: Skill) {
     return (
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center group cursor-pointer">
             <div
-                className="w-10 h-10 flex items-center justify-center rounded-full"
-                style={{ backgroundColor: color }}
+                className="w-10 h-10 flex items-center justify-center rounded-full transition-transform duration-200 group-hover:scale-110"
+                style={{ backgroundColor: color || "transparent" }}
             >
-                <img src={src} alt={label} className={` ${chapa ? "w-10 h-10" : "w-6 h-6"} opacity-90 rounded-full`} />
+                <img
+                    src={src}
+                    alt={label}
+                    className={`${size == "large" ? "w-10 h-10" : "w-6 h-6"
+                        } opacity-90 rounded-full object-contain`}
+                />
             </div>
-            <p className="text-xs mt-1 text-gray-400">{label}</p>
+            <p className="text-xs mt-1 text-gray-400 group-hover:text-white transition-colors">
+                {label}
+            </p>
         </div>
     );
 }

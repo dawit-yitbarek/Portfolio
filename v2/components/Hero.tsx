@@ -11,11 +11,11 @@ export default function Hero() {
                 </h1>
 
                 <h2 className="text-2xl md:text-3xl text-gray-300">
-                    Full Stack Web Developer
+                    Full Stack Web, Mobile app and Telegram bot Developer
                 </h2>
 
                 <p className="text-gray-400 max-w-md">
-                    I build modern, high-performance web applications, Telegram mini-apps and Telegram bots with clean code,
+                    I build modern, high-performance Web applications, Mobile apps, Telegram mini-apps and Telegram bots with clean code,
                     beautiful UI, and solid backend architecture.
                 </p>
 
